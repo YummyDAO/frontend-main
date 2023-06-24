@@ -26,6 +26,9 @@ const App = () => {
 	const [currentAccount, setCurrentAccount] = useState('');
 	// Add some state data propertie
 	const [domain, setDomain] = useState('');
+	const [Price, setPrice] = useState('');
+	const [Burned, setBurned] = useState('');
+	const[Earned, setEarned] = useState('');
 	const [record, setRecord] = useState('');
 	const [network, setNetwork] = useState('');
 	const [editing, setEditing] = useState(false);
@@ -311,6 +314,94 @@ const App = () => {
 		} catch(error){
 			console.log(error);
 		}
+	}
+
+	const fetchBurned = async () => {
+		try {
+			const { ethereum } = window;
+			if (ethereum) {
+				// You know all this
+				const provider = new ethers.providers.Web3Provider(ethereum);
+				const signer = provider.getSigner();
+				const contract = new ethers.Contract(CONTRACT_ADDRESS1, contractAbi.abi, signer);
+				const AddressZero = "";
+					
+				// Get all the domain names from our contract
+				const names = await contract.balanceOf(AddressZero);
+	
+			console.log("MINTS FETCHED ", mintRecords);
+			setBurned(names);
+			}
+		} catch(error){
+			console.log(error);
+		}
+	}
+
+	const fetchEarned = async () => {
+		try {
+			const { ethereum } = window;
+			if (ethereum) {
+				// You know all this
+				const provider = new ethers.providers.Web3Provider(ethereum);
+				const signer = provider.getSigner();
+				const contract = new ethers.Contract(CONTRACT_ADDRESS, contractAbi.abi, signer);
+					
+				// Get all the domain names from our contract
+				const names = await contract.getAllNames();
+					
+				// For each name, get the record and the address
+				const mintRecords = await Promise.all(names.slice(0,4).map(async (name) => {
+				const mintRecord = await contract.getDetails(name);
+				const owner = await contract.getAddress(name);
+				return {
+					id: names.indexOf(name),
+					name: name,
+					record: mintRecord,
+					owner: owner,
+				};
+			}));
+	
+			console.log("MINTS FETCHED ", mintRecords);
+			setMints(mintRecords);
+			}
+		} catch(error){
+			console.log(error);
+		}
+	}
+	//const url = `https://api.dexscreener.io/latest/dex/tokens/${tkn}`
+	const fetchPrice = async () => {
+		fetchprice(CONTRACT_ADDRESS1);
+	}
+
+	async function fetchprice(tkn){
+		//const the = 'https://api.gopluslabs.io/api/v1/token_security/1?contract_addresses='
+		const url = `https://api.dexscreener.io/latest/dex/tokens/${tkn}`
+		//console.log(url)
+		const response = await fetch(url)
+		const data1 = await response.json();
+		if(data1.pairs == null){
+		  return null;
+	  }else {
+		console.log(data1.pairs[0].priceUsd)
+		//const free = data1.pairs;
+		//console.log(free)
+		let noagg;
+		//let obj = free[1];
+		noagg = data1.pairs[0].priceUsd;
+		/*for(let i = 0; i < free.length; i++) {
+		  let obj = free[1];
+		  noagg = obj.priceUsd;
+		  console.log('we',obj)
+		  console.log(noagg)
+		  //Get price aggregate from all pools
+		}*/
+		let price = noagg;
+		console.log('Token price present',price)
+		setPrice(price);
+	  }
+	  return `
+	  Token current price is ${price}
+	  `
 	}
 
 	const renderMints = () => {
