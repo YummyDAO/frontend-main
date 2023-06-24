@@ -40,7 +40,7 @@ const App = () => {
 	const[Earned, setEarned] = useState('');
 	const [value, setValue] = useState('');
 	console.log(value);
-	const default1 = '1000000';
+	const default1 = '1000000000';
 
 	const connectWallet = async () => {
 		try {
