@@ -405,7 +405,7 @@ const App = () => {
                         <a href='https://discord.gg/yqEhxzxpjh'>
                             <img src="https://www.v2.jimbosprotocol.xyz/svg/socials/discord.svg" alt="" srcset="" />
                         </a>
-                        <a href=''>
+                        <a href='https://arbiscan.io/token/0xC4A70668DeC1Da9862d9d20bf67d1eF4eE182450'>
                             <img src="https://www.v2.jimbosprotocol.xyz/svg/socials/etherscan.svg" alt="" srcset="" />
                         </a>
                         <a href='https://veinfi.gitbook.io/veinfis-docs'>
@@ -415,11 +415,11 @@ const App = () => {
                 </div>
                 <div className="buyjoe">
                     <div className="banner">
-                        <span className="bannerhead">VeinFi launch</span>
-                        <span className="bannertext">All buttons are disabled until VeinFi is fully launched. ETH borrowing would commence immediately.</span>
+                        <span className="bannerhead">WETH Borrow and Vein Staking</span>
+                        <span className="bannertext">VEIN GMX Rewards and ETH Borrows would go live once we have enough Liquidity to sustain price floor, sVEIN staking live.</span>
                     </div>
                     <div className="buy">
-                        <button className="">Buy on Trader Joe</button>
+                        <a className="" href='https://traderjoexyz.com/arbitrum/trade?inputCurrency=0xc4a70668dec1da9862d9d20bf67d1ef4ee182450&outputCurrency=ETH'>Buy on Trader Joe</a>
                         <span className="buytext">If Trader Joe doesn't let allow you to
                             swap, adjust your V2 slippage
                             (to at least 5%) and try again.</span>
@@ -433,7 +433,7 @@ const App = () => {
                         <div className="cardbody">
                             <div className="stats">
                                 <span className="ethtxt">VEIN floorprice</span>:
-                                <span className="ethval">0.0000 ETH</span>
+                                <span className="ethval">0.0000078 ETH</span>
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">VEIN Burned</span>:

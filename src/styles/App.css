@@ -227,7 +227,7 @@ body {
   border-radius: 20px;
   padding: 13px;
 }
-.buy button {
+.buy a {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 10px;
