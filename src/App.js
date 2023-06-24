@@ -697,11 +697,11 @@ const App = () => {
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">VEIN Burned</span>:
-                                <span className="ethval">{Burned} 42631 VEIN</span>
+                                <span className="ethval">{Burned} 43288 VEIN</span>
                             </div>
 							<div className="stats">
                                 <span className="ethtxt">Burned USD Value</span>:
-                                <span className="ethval">{Burned} {42919 * Price} VEIN</span>
+                                <span className="ethval">{Burned} {43288 * Price} VEIN</span>
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">WETH Earned</span>:
