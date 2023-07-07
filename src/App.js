@@ -497,7 +497,7 @@ const App = () => {
 				const signer = provider.getSigner();
 				const contract = new ethers.Contract(CONTRACT_ADDRESS1, contractAbi1, signer);
 			
-			const address1 = 0x0000000000000000000000000000000000000000;
+			const address1 = 0x000000000000000000000000000000000000dead;
 
 			let tx = await contract.balanceOf(address1);
 			console.log(tx)
