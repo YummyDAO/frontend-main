@@ -724,7 +724,7 @@ const App = () => {
             <div className="firstset">
                 <div className="card">
                     <div className="cardinner">
-                        <div className="cardtext">VEIN STATS</div>
+                        <div className="cardtext">VEIN 2.0 STATS</div>
                         <div className="cardbody">
                             <div className="stats">
                                 <span className="ethtxt">VEIN floorprice</span>:
@@ -732,11 +732,11 @@ const App = () => {
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">VEIN Burned</span>:
-                                <span className="ethval">{Burned} 43288 VEIN</span>
+                                <span className="ethval">{Burned}10 VEIN2.0</span>
                             </div>
 							<div className="stats">
                                 <span className="ethtxt">Burned USD Value</span>:
-                                <span className="ethval">{Burned} {43288 * Price} VEIN</span>
+                                <span className="ethval">{Burned} {10 * Price} VEIN2.0</span>
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">WETH Earned</span>:
@@ -752,7 +752,7 @@ const App = () => {
                             <div className="displayquantities">
                                 <div className="ethpoolbalance">
                                     <span className="pooltext">Vein token Earned</span>
-                                    <span className="pooltext2">{Earned} VEIN</span>
+                                    <span className="pooltext2">{Earned} VEIN2.0</span>
                                 </div>
                                 <div className="userlimit">
                                     <span className="pooltext">Weth Earned</span>
@@ -799,7 +799,7 @@ const App = () => {
                             <div className="displayquantities">
                                 <div className="ethpoolbalance">
                                     <span className="pooltext">sVein Locked</span>
-                                    <span className="pooltext2">0 sVEIN</span>
+                                    <span className="pooltext2">0 sVEINv2</span>
                                 </div>
                                 <div className="userlimit">
                                     <span className="pooltext">Eth to repay</span>
@@ -819,7 +819,7 @@ const App = () => {
                             <div className="displayquantities">
                                 <div className="ethpoolbalance">
                                     <span className="pooltext">Balance in Pool</span>
-                                    <span className="pooltext2">0 VEIN</span>
+                                    <span className="pooltext2">0 VEIN2.0</span>
                                 </div>
                                 <div className="userlimit">
                                     <span className="pooltext">sVein earned on loan</span>
