@@ -828,8 +828,8 @@ const App = () => {
                             </div>
                         </div>
                         <div className="cardfooter">
-                            <button type="submit" className="borrowbtn">Borrow sVein</button>
-                            <button type="submit" className="borrowbtn">Pay loan</button>
+                            {/*<button type="submit" className="borrowbtn">Borrow sVein</button>*/}
+                            <button type="submit" className="borrowbtn">Claim</button>
                         </div>
                     </div>
                 </div>
