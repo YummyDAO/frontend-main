@@ -814,17 +814,17 @@ const App = () => {
                 </div>
                 <div className="card">
                     <div className="cardinner">
-                        <div className="cardtext">Self Payable sVein Loan</div>
+                        <div className="cardtext">Redeem Vested VEIN 2.0</div>
                         <div className="cardbody">
                             <div className="displayquantities">
                                 <div className="ethpoolbalance">
-                                    <span className="pooltext">Balance in Pool</span>
+                                    <span className="pooltext">Accumulated VEIN 2.0</span>
                                     <span className="pooltext2">0 VEIN2.0</span>
                                 </div>
-                                <div className="userlimit">
+                                {/*<div className="userlimit">
                                     <span className="pooltext">sVein earned on loan</span>
                                     <span className="pooltext2">0 sVEINv2</span>
-                                </div>
+								</div>*/}
                             </div>
                         </div>
                         <div className="cardfooter">
