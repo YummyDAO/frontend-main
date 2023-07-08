@@ -710,6 +710,7 @@ const App = () => {
 		fetchEarned();
 		fetchPrice();
 		fetchActive();
+		fetchClaim();
 	}, [currentAccount]);
 
   return (
