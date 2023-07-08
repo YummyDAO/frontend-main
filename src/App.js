@@ -272,8 +272,8 @@ const App = () => {
 	};
 
 	const Claim = async () => {
-		if (!record || !domain) { return }
-		setLoading(true);
+		//if (!record || !domain) { return }
+		//setLoading(true);
 		console.log("Updating domain", domain, "with record", record);
 		  try {
 			const { ethereum } = window;
@@ -293,7 +293,7 @@ const App = () => {
 		  } catch(error) {
 			console.log(error);
 		  }
-		setLoading(false);
+		//setLoading(false);
 	};
 
 	
