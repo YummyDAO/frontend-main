@@ -572,6 +572,36 @@ const App = () => {
 		}
 	}
 
+	const fetchRate = async () => {
+		try {
+			const { ethereum } = window;
+			if (ethereum) {
+				// You know all this
+				const provider = new ethers.providers.Web3Provider(ethereum);
+				const signer = provider.getSigner();
+				const contract = new ethers.Contract(CONTRACT_ADDRESS, contractAbi, signer);
+				let amount = ethers.utils.parseUnits(1, "ether");
+				
+				const address1 = currentAccount;
+	
+				let tx = await contract.previewMint(amount);
+				console.log(tx)
+				let newvalue = tx.toString();
+				//console.log(newvalue)
+				const ethvalue = ethers.utils.formatEther(newvalue)
+				const ethvalue1 = Math.round(ethvalue * 1e4) / 1e4;
+				console.log(ethvalue)
+				//console.log("Record set https://mumbai.polygonscan.com/tx/"+tx.hash);
+				setEarned(ethvalue1)
+	
+			//console.log("MINTS FETCHED ", mintRecords);
+			//setMints(mintRecords);
+			}
+		} catch(error){
+			console.log(error);
+		}
+	}
+
 	const fetchClaim = async () => {
 		try {
 			const { ethereum } = window;
