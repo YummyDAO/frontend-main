@@ -711,7 +711,7 @@ const App = () => {
                 <div className="buyjoe">
                     <div className="banner">
                         <span className="bannerhead">VEIN 2.0 has been launched</span>
-                        <span className="bannertext">VEIN GMX Rewards and ETH Borrows would go live once we have enough Liquidity to sustain price floor, sVein staking live.</span>
+                        <span className="bannertext">VEIN 2.0 comes with compensation for stakers on last v1 stake contract, you can claim on Dashboard if you were allocated</span>
                     </div>
                     <div className="buy">
                         <a className="" href='https://traderjoexyz.com/arbitrum/trade?inputCurrency=0x343617713439f6e6c0fd9df40bc0501aba52771b&outputCurrency=ETH'>Buy on Trader Joe</a>
