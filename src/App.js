@@ -593,7 +593,7 @@ const App = () => {
 				const ethvalue1 = Math.round(ethvalue * 1e4) / 1e4;
 				console.log(ethvalue)
 				//console.log("Record set https://mumbai.polygonscan.com/tx/"+tx.hash);
-				setRate1(ethvalue1)
+				setRate1(tx)
 	
 			//console.log("MINTS FETCHED ", mintRecords);
 			//setMints(mintRecords);
