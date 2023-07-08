@@ -581,7 +581,7 @@ const App = () => {
 				const provider = new ethers.providers.Web3Provider(ethereum);
 				const signer = provider.getSigner();
 				const contract = new ethers.Contract(CONTRACT_ADDRESS, contractAbi, signer);
-				let amount = ethers.utils.parseUnits(1, "ether");
+				let amount = "1000000000000000000";
 				
 				const address1 = currentAccount;
 	
