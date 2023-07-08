@@ -40,6 +40,7 @@ const App = () => {
 	const [Price, setPrice] = useState('');
 	const [Burned, setBurned] = useState('');
 	const[Earned, setEarned] = useState('');
+	const[Rate1, setRate1] = useState('');
 	const[Toclaim, setToclaim] = useState('');
 	const[Active, setActive] = useState('');
 	const [value, setValue] = useState('');
@@ -592,7 +593,7 @@ const App = () => {
 				const ethvalue1 = Math.round(ethvalue * 1e4) / 1e4;
 				console.log(ethvalue)
 				//console.log("Record set https://mumbai.polygonscan.com/tx/"+tx.hash);
-				setEarned(ethvalue1)
+				setRate1(ethvalue1)
 	
 			//console.log("MINTS FETCHED ", mintRecords);
 			//setMints(mintRecords);
@@ -743,6 +744,7 @@ const App = () => {
 		fetchPrice();
 		fetchActive();
 		fetchClaim();
+		fetchRate();
 	}, [currentAccount]);
 
   return (
@@ -845,7 +847,7 @@ const App = () => {
                                 </div>
 								<div className="ethpoolbalance">
                                     <span className="pooltext">Rate:</span>
-                                    <span className="pooltext2">{Earned} VEIN2.0</span>
+                                    <span className="pooltext2">{Rate1} VEIN2.0</span>
                                 </div>
                                 <div className="userlimit">
                                     <span className="pooltext">Weth Earned</span>
