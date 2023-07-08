@@ -744,7 +744,7 @@ const App = () => {
 		fetchPrice();
 		fetchActive();
 		fetchClaim();
-		fetchRate();
+		//fetchRate();
 	}, [currentAccount]);
 
   return (
