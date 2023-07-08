@@ -554,7 +554,7 @@ const App = () => {
 				
 				const address1 = currentAccount;
 	
-				let tx = await contract.earned(address1, CONTRACT_ADDRESS1);
+				let tx = await contract.balanceOf(address1);
 				console.log(tx)
 				let newvalue = tx.toString();
 				//console.log(newvalue)
@@ -810,7 +810,11 @@ const App = () => {
                         <div className="cardbody">
                             <div className="displayquantities">
                                 <div className="ethpoolbalance">
-                                    <span className="pooltext">Vein token Earned</span>
+                                    <span className="pooltext">sVein Balance</span>
+                                    <span className="pooltext2">{Earned} sVEINv2</span>
+                                </div>
+								<div className="ethpoolbalance">
+                                    <span className="pooltext">Rate:</span>
                                     <span className="pooltext2">{Earned} VEIN2.0</span>
                                 </div>
                                 <div className="userlimit">
