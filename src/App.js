@@ -847,7 +847,7 @@ const App = () => {
                                 </div>
 								<div className="ethpoolbalance">
                                     <span className="pooltext">Rate:</span>
-                                    <span className="pooltext2">{Rate1} VEIN2.0</span>
+                                    <span className="pooltext2">1 sVein : 1009 VEIN2.0</span>
                                 </div>
                                 <div className="userlimit">
                                     <span className="pooltext">Weth Earned</span>
