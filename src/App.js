@@ -214,9 +214,10 @@ const App = () => {
 		  let amount = ethers.utils.parseUnits(value.toString(), "ether");
 	
 				console.log("Going to pop wallet now to pay gas...")
+				const address1 = currentAccount;
 
 
-		  let tx = await contract.stake(amount);
+		  let tx = await contract.deposit(amount, address1);
 		  // Wait for the transaction to be mined
 				const receipt = await tx.wait();
 	
@@ -305,8 +306,9 @@ const App = () => {
 				const signer = provider.getSigner();
 				const contract = new ethers.Contract(CONTRACT_ADDRESS, contractAbi, signer);
 				let amount = ethers.utils.parseUnits(value.toString(), "ether");
+				const address1 = currentAccount;
 	
-				let tx = await contract.withdraw(amount);
+				let tx = await contract.withdraw(amount, address1, address1);
 				await tx.wait();
 				console.log("Record set https://mumbai.polygonscan.com/tx/"+tx.hash);
 	
