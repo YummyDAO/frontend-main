@@ -819,7 +819,7 @@ const App = () => {
                         <div className="cardbody">
                             <div className="stats">
                                 <span className="ethtxt">VEIN floorprice</span>:
-                                <span className="ethval">{Price} USD</span>
+                                <span className="ethval">{0.01876} USD</span>
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">VEIN Burned</span>:
@@ -827,7 +827,7 @@ const App = () => {
                             </div>
 							<div className="stats">
                                 <span className="ethtxt">Burned USD Value</span>:
-                                <span className="ethval">{Burned} {9856 * Price} VEIN</span>
+                                <span className="ethval">{Burned} {9856 * 0.01876} VEIN</span>
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">WETH Earned</span>:
