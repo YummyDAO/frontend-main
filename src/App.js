@@ -781,7 +781,7 @@ const App = () => {
                     <span className="text2">Interest Bearing Concentrated Liquidity</span>
                 </div>
                 <div className="logodescription">
-                    <span className="textheader">Veinfi 2.0</span>
+                    <span className="textheader">Veinfi </span>
                     <p className="ppp"> Veinfi is a protocol with floor eth backing for each token, forked from battle tested fllor token from Trader Joe. 
                     With a new iterating algorithm on bins, Investing of idle pool Eth on GMX with weth rewards distributed to stakers, ETH lending and Self payable sVein loan.</p>
                     <div className="footbtn">
@@ -801,8 +801,8 @@ const App = () => {
                 </div>
                 <div className="buyjoe">
                     <div className="banner">
-                        <span className="bannerhead">VEIN 2.0 has been launched</span>
-                        <span className="bannertext">VEIN 2.0 comes with compensation for stakers on last v1 stake contract, you can claim on Dashboard if you were allocated</span>
+                        <span className="bannerhead">VEIN coming up launch</span>
+                        <span className="bannertext">VEIN Drip on arbitrum is coming up soon</span>
                     </div>
                     <div className="buy">
                         <a className="" href='https://traderjoexyz.com/arbitrum/trade?inputCurrency=0x343617713439f6e6c0fd9df40bc0501aba52771b&outputCurrency=ETH'>Buy on Trader Joe</a>
@@ -815,7 +815,7 @@ const App = () => {
             <div className="firstset">
                 <div className="card">
                     <div className="cardinner">
-                        <div className="cardtext">VEIN 2.0 STATS</div>
+                        <div className="cardtext">VEIN STATS</div>
                         <div className="cardbody">
                             <div className="stats">
                                 <span className="ethtxt">VEIN floorprice</span>:
@@ -823,11 +823,11 @@ const App = () => {
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">VEIN Burned</span>:
-                                <span className="ethval">{Burned}1,317 VEIN2.0</span>
+                                <span className="ethval">{Burned}9856 VEIN</span>
                             </div>
 							<div className="stats">
                                 <span className="ethtxt">Burned USD Value</span>:
-                                <span className="ethval">{Burned} {1317 * Price} VEIN2.0</span>
+                                <span className="ethval">{Burned} {9856 * Price} VEIN</span>
                             </div>
                             <div className="stats">
                                 <span className="ethtxt">WETH Earned</span>:
@@ -907,7 +907,7 @@ const App = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card none">
                     <div className="cardinner">
                         <div className="cardtext">Redeem Vested VEIN 2.0</div>
                         <div className="cardbody">
